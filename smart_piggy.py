@@ -12,6 +12,11 @@ class SmartPiggyBank:
 
     def get_status(self):
         return {"balance": self.balance, "goal": self.goal}
+    
+    def calculate_interest(self, rate: float, months: int) -> float:
+    if rate < 0 or months < 1:
+        raise ValueError("Ставка и срок должны быть положительными")
+    return self.balance * (1 + rate/100) ** (months/12)
 
 class SmartPiggyBank:
     def __init__(self):
