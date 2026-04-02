@@ -1,7 +1,7 @@
 
 from typing import Dict, Union
 
-VERSION = "1.3-WorkA"
+VERSION = "1.3-WorkB"
 
 
 class SmartPiggyBank:
